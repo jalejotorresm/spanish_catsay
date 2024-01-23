@@ -1,8 +1,18 @@
 [package]
 name = "spanish_catsay"
-version = "0.1.0"
+version = "0.1.1"
+author = "Alejandro Torres <alejandrotorres5286@gmail.com>"
+readme = "README.md"
+repository = "https://github.com/jalejotorresm/spanish_catsay"
 edition = "2021"
+license = "MIT"
+description = "Proyecto inspirado en cowsay el cual imprime un gato en consola con la frase que quieras que el gato diga."
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+clap = { version = "4.2.1", features = ["derive"] }
+colored = "2.0.0"
+anyhow = "1.0.70"
+assert_cmd="2.0.10"
+predicates="3.0.2"
